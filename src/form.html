@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>title</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="/js/libs.min.js"></script>
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <form class="form js__form" method="POST">
+      <div class="container">
+        <div class="swiper-block">
+          <div class="swiper js__swiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"> 
+                <div class="slide-inner">
+                  <div class="questions"> 
+                    <div class="question">Являетесь ли вы жителем г. Москвы?</div>
+                    <div class="answers">
+                      <div class="answer-variant">
+                        <label class="answer-text">
+                          <input class="answer-point" type="radio" name="city" value="1" checked>Да
+                        </label>
+                      </div>
+                      <div class="answer-variant">
+                        <label class="answer-text">
+                          <input class="answer-point" type="radio" name="city" value="0">Нет
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="controls">
+                    <div class="btn btn--green js__next"> <span>Продолжить</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="slide-inner">
+                  <div class="questions"> 
+                    <div class="question">Есть ли у Вас гражданство РФ?</div>
+                    <div class="answers">
+                      <div class="answer-variant">
+                        <label class="answer-text">
+                          <input class="answer-point" type="radio" name="citizenship" value="1" checked>Да
+                        </label>
+                      </div>
+                      <div class="answer-variant">
+                        <label class="answer-text">
+                          <input class="answer-point" type="radio" name="citizenship" value="0">Нет
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="controls">
+                    <div class="btn btn--green js__next"> <span>Продолжить</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="slide-inner">
+                  <div class="questions"> 
+                    <div class="question">Есть ли у Вас опыт работы на промышленном швейном оборудовании: прямострочная машина, оверлок?</div>
+                    <div class="answers">
+                      <div class="answer-variant">
+                        <label class="answer-text">
+                          <input class="answer-point" type="radio" name="industrial_experience" value="1" checked>Да
+                        </label>
+                      </div>
+                      <div class="answer-variant">
+                        <label class="answer-text">
+                          <input class="answer-point" type="radio" name="industrial_experience" value="0">Нет
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="controls">
+                    <div class="btn btn--green js__next"> <span>Продолжить</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="slide-inner">
+                  <div class="questions"> 
+                    <div class="question">Вы готовы обучаться и работать на разном современном промышленном оборудовании?</div>
+                    <div class="answers">
+                      <div class="answer-variant">
+                        <label class="answer-text">
+                          <input class="answer-point" type="radio" name="modern_equipment" value="1" checked>Да
+                        </label>
+                      </div>
+                      <div class="answer-variant">
+                        <label class="answer-text">
+                          <input class="answer-point" type="radio" name="modern_equipment" value="0">Нет
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="controls">
+                    <div class="btn btn--green js__next"> <span>Продолжить</span></div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide"> 
+                <div class="slide-inner">
+                  <div class="questions"> 
+                    <div class="question">Считаете ли Вы себя ответственным, исполнительным, пунктуальным, аккуратным человеком?</div>
+                    <div class="answers">
+                      <div class="answer-variant">
+                        <label class="answer-text">
+                          <input class="answer-point" type="radio" name="human_qualities" value="1" checked>Да
+                        </label>
+                      </div>
+                      <div class="answer-variant">
+                        <label class="answer-text">
+                          <input class="answer-point" type="radio" name="human_qualities" value="0">Нет
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="controls">
+                    <button class="btn btn--green js__submit" type="submit"><span>Отправить анкету</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination js__swiper-pagination"></div>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>

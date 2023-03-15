@@ -1,0 +1,30 @@
+* {
+    position: relative;
+    box-sizing: border-box;
+    font-family: 'Cera Pro', sans-serif;
+    font-weight: 300;
+}
+html {
+    width: 100%;
+    min-height: 100vh;
+}  
+body {
+    min-width: 320px;
+    width: 100%;
+    overflow-x: hidden;
+    font-size: 1.041666vw;
+    // font-size: 20px;
+    background: $light;
+}
+@media screen and (min-width: 1920px) {
+    body {
+        font-size: 20px;
+    }
+}
+.container {
+    width: 100%;
+    // max-width: 1320px;
+    max-width: 66em;
+    margin: 0 auto;
+    padding: 0 1em;
+}

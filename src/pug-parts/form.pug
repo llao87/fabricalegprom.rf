@@ -1,0 +1,86 @@
+form.form.js__form(method="POST")
+    .container
+        .swiper-block
+            .swiper.js__swiper
+                .swiper-wrapper
+                    .swiper-slide 
+                        .slide-inner
+                            .questions 
+                                .question Являетесь ли вы жителем г. Москвы?
+                                .answers
+                                    .answer-variant
+                                        label.answer-text
+                                            input.answer-point(type="radio" name="city" value="1" checked)
+                                            | Да
+                                    .answer-variant
+                                        label.answer-text
+                                            input.answer-point(type="radio" name="city" value="0")
+                                            | Нет
+                            .controls
+                                .btn.btn--green.js__next 
+                                    span Продолжить
+                    .swiper-slide 
+                        .slide-inner
+                            .questions 
+                                .question Есть ли у Вас гражданство РФ?
+                                .answers
+                                    .answer-variant
+                                        label.answer-text
+                                            input.answer-point(type="radio" name="citizenship" value="1" checked)
+                                            | Да
+                                    .answer-variant
+                                        label.answer-text
+                                            input.answer-point(type="radio" name="citizenship" value="0")
+                                            | Нет
+                            .controls
+                                .btn.btn--green.js__next 
+                                    span Продолжить
+                    .swiper-slide 
+                        .slide-inner
+                            .questions 
+                                .question Есть ли у Вас опыт работы на промышленном швейном оборудовании: прямострочная машина, оверлок?
+                                .answers
+                                    .answer-variant
+                                        label.answer-text
+                                            input.answer-point(type="radio" name="industrial_experience" value="1" checked)
+                                            | Да
+                                    .answer-variant
+                                        label.answer-text
+                                            input.answer-point(type="radio" name="industrial_experience" value="0")
+                                            | Нет
+                            .controls
+                                .btn.btn--green.js__next 
+                                    span Продолжить
+                    .swiper-slide 
+                        .slide-inner
+                            .questions 
+                                .question Вы готовы обучаться и работать на разном современном промышленном оборудовании?
+                                .answers
+                                    .answer-variant
+                                        label.answer-text
+                                            input.answer-point(type="radio" name="modern_equipment" value="1" checked)
+                                            | Да
+                                    .answer-variant
+                                        label.answer-text
+                                            input.answer-point(type="radio" name="modern_equipment" value="0")
+                                            | Нет
+                            .controls
+                                .btn.btn--green.js__next 
+                                    span Продолжить
+                    .swiper-slide 
+                        .slide-inner
+                            .questions 
+                                .question Считаете ли Вы себя ответственным, исполнительным, пунктуальным, аккуратным человеком?
+                                .answers
+                                    .answer-variant
+                                        label.answer-text
+                                            input.answer-point(type="radio" name="human_qualities" value="1" checked)
+                                            | Да
+                                    .answer-variant
+                                        label.answer-text
+                                            input.answer-point(type="radio" name="human_qualities" value="0")
+                                            | Нет
+                            .controls
+                                button.btn.btn--green.js__submit(type="submit")
+                                    span Отправить анкету
+            .swiper-pagination.js__swiper-pagination
