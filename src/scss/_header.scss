@@ -3,6 +3,46 @@
     height: 100%;
     .container {
         font-size: 1em;
+
+        .callback {
+            background-image: url(/img/icon-call.png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            width: 4.4em;
+            height: 4.4em;
+            position: fixed;
+            top: 1.4em;
+            right: 13.35em;
+            z-index: 100;
+            cursor: pointer;
+            transition: all 0.3s linear;
+
+            &:hover {
+                transform: scale(1.035);
+            }
+        }
+
+        .lines {
+            .line-1 {
+                height: 28.8em;
+                top: 14.5em;
+                left: 10.25em;
+            }
+            .node.node-1 {
+                top: 14.25em;
+                left: 6em;
+            }
+            .node.node-2 {
+                top: 17.5em;
+                left: 6em;
+            }
+            .node.node-3 {
+                top: 20.8em;
+                left: 6em;
+            }
+        }
+
         .logo {
             position: absolute;
             display: inline-block;
@@ -35,31 +75,51 @@
             position: absolute;
             top: 22.5em;
             left: 10em;
-            .lines {
-                .line-1 {
-                }
-                .line-2 {
-                }
-            }
 
             .advantages {
                 .advantage {
-                    &:nth-child(1) {
-                    }
-                    &:nth-child(2) {
-                    }
-                    &:nth-child(3) {
-                    }
+                    font-size: 1.7em;
+                    text-transform: uppercase;
+                }
+                .advantage-1 {
+                    top: 0.1em;
+                    left: 2.6em;
+                    letter-spacing: -0.035em;
+                }
+                .advantage-2 {
+                    top: 2em;
+                    left: 2.4em;
+                }
+                .advantage-3 {
+                    top: 3.35em;
+                    left: 2.6em;
+                    line-height: 1.25;
                 }
             }
         }
 
         .promo-actions {
+            top: 42.9em;
+            left: 5em;
             .about-project {
+                font-size: 0.9em;
+                text-transform: uppercase;
+                padding: 0.85em 3.5em 0.9em 2.2em;
+                border: 0.1em solid $black;
+                background: $light;
+                left: 0.25em;
+                margin: 0 0.9em 0 0;
             }
             .btn {
+                font-size: .9em;
+                text-transform: uppercase;
+                padding: 0.85em 4.4em 0.85em 4.4em;
+                border: 0.1em solid $black;
+                left: 0.25em;
             }
             .btn--black {
+                background: $black;
+                color: $light;
             }
         }
 
