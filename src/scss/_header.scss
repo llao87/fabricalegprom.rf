@@ -101,6 +101,8 @@
         .promo-actions {
             top: 42.9em;
             left: 5em;
+            display: inline-flex;
+            align-items: stretch;
             .about-project {
                 font-size: 0.9em;
                 text-transform: uppercase;
@@ -109,6 +111,23 @@
                 background: $light;
                 left: 0.25em;
                 margin: 0 0.9em 0 0;
+                cursor: pointer;
+
+                &::after {
+                    position: absolute;
+                    display: block;
+                    content: "";
+                    width: 0.8em;
+                    height: 0.8em;
+                    background-image: url(/img/icon-arrow-select.svg);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: contain;
+                    top: 50%;
+                    right: 1.9em;
+                    transform: translateY(-50%);
+
+                }
             }
             .btn {
                 font-size: .9em;
@@ -116,10 +135,18 @@
                 padding: 0.85em 4.4em 0.85em 4.4em;
                 border: 0.1em solid $black;
                 left: 0.25em;
+                cursor: pointer;
             }
             .btn--black {
-                background: $black;
+                border: 0.1em solid $black;
+                background-color: $black;
                 color: $light;
+                transition: all 0.3s linear;
+
+                &:hover {
+                    background-color: $light;
+                    color: $black;
+                }
             }
         }
 
