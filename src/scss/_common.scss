@@ -14,7 +14,7 @@ body {
     overflow-x: hidden;
     font-size: 1.041666vw;
     // font-size: 20px;
-    background: $light;
+    background: #fff;
     color: $black;
 }
 @media screen and (min-width: 1920px) {
@@ -48,18 +48,5 @@ body {
         color: $light;
         background-color: $black;
         padding: 0 0 0.1em 0;
-    }
-
-    .line-2 {
-        height: 12em;
-        top: 43.8em;
-        transform: rotate(42.8deg);
-        left: 20.8em;
-    }
-    .line-3 {
-        height: 107em;
-        top: 4.9em;
-        left: 70.4em;
-        transform: rotate(-86.3deg);
     }
 }
