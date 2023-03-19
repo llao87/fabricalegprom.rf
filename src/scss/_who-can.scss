@@ -1,6 +1,6 @@
 .who-can {
     width: 100%;
-    height: 55em;
+    height: 65em;
 
     .container {
         .lines {
@@ -40,17 +40,20 @@
                 top: 20em;
             }
             .node.node-4 {
-                left: -5em;
-                top: 3em;
+                left: 19.4em;
+                top: 39.5em;
             }
         }
 
         .who-can-studying {
             position: absolute;
+            display: inline-block;
             width: 36em;
             left: -3.5em;
             top: 4.5em;
+            height: 52.2em;
             .section-title {
+                display: inline-block;
                 margin: 0;
                 font-size: 3.165em;
                 text-transform: uppercase;
@@ -60,22 +63,87 @@
                 width: 10.2em;
                 line-height: 1.25;
             }
-            .list {
-                .btn-collapse {
-                }
-                .item {
+            .btn-collapse {
+                position: absolute;
+                display: inline-block;
+                background-image: url(/img/icon-arrow-collapse.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                left: 35.7em;
+                top: 8.8em;
+                width: 0.6em;
+                height: 1.8em;
+                cursor: pointer;
+                z-index: 10;
+                transition: all 0.6s linear;
+
+                &.active {
+                    transform: scaleY(-1);
                 }
             }
-            .photo {
+            .overflow-wrap {
+                overflow: hidden;
+                width: 100%;
+                height: 44.4em;
+                .list-wrap {
+                    top: 0.2em;
+
+                    .list {
+                        display: inline-block;
+                        margin: auto;
+                        left: 2.6em;
+                        top: 0em;
+                        width: 30em;
+                        padding: 0;
+                        line-height: 1.25;
+                        overflow-y: hidden;
+
+                        .item {
+                            display: inline-block;
+                            line-height: 1.5;
+                            font-size: 0.9em;
+                            margin: 0 0 0.5em 0;
+                            padding: 0 0 0 1.8em;
+
+                            &::before {
+                                display: inline-block;
+                                position: absolute;
+                                content: "";
+                                background-image: url(/img/icon-list-bullit.svg);
+                                background-position: center;
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                width: 1.334em;
+                                height: 1.723em;
+                                left: 0;
+                                top: -0.5em;
+                            }
+                        }
+                    }
+                }
+                .photo {
+                    display: inline-block;
+                    background-image: url(/img/who-can-big.jpg);
+                    background-size: cover;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    display: inline-block;
+                    width: 100%;
+                    height: 39.4em;
+                    top: 2em;
+                }
             }
         }
 
         .program-purpose {
             position: absolute;
+            display: inline-block;
             width: 28em;
             right: 0em;
             top: 14.3em;
             .photo {
+                display: inline-block;
                 width: 25em;
                 height: 16.2em;
                 left: 0.9em;
@@ -86,19 +154,88 @@
                 background-position: center;
             }
             .section-title {
+                display: inline-block;
                 margin: 0;
                 font-size: 3.165em;
                 text-transform: uppercase;
                 font-weight: bold;
-                top: 0.725em;
+                top: 0.7em;
                 left: 0.325em;
                 line-height: 1.25;
                 width: 6.6em;
             }
-            .list {
-                .btn-collapse {
+            .btn-collapse {
+                display: inline-block;
+                background-image: url(/img/icon-arrow-collapse.svg);
+                background-repeat: no-repeat;
+                background-size: contain;
+                background-position: center;
+                left: 26.65em;
+                top: 27.6em;
+                width: 0.55em;
+                height: 1.8em;
+                cursor: pointer;
+                z-index: 10;
+                position: absolute;
+                transition: all 0.6s linear;
+
+                &.active {
+                    transform: scaleY(-1);
                 }
-                .item {
+            }
+            .overflow-wrap {
+                overflow: hidden;
+                display: inline-block;
+                overflow-y: hidden;
+                margin: 0;
+                left: -0.7em;
+                top: 0em;
+                width: 26.7em;
+                height: 18em;
+                padding: 0;
+                .list-wrap {
+                    top: 2.5em;
+
+                    .list {
+                        // display: inline-block;
+                        // overflow-y: hidden;
+                        // margin: 0;
+                        // left: -0.7em;
+                        // top: 0em;
+                        // width: 26.7em;
+                        // padding: 0;
+                        // line-height: 1.25;
+
+                        display: inline-block;
+                        overflow-y: hidden;
+                        margin: 0;
+                        left: 0;
+                        top: 0em;
+                        padding: 0;
+                        width: 100%;
+                        line-height: 1.25;
+                        .item {
+                            display: inline-block;
+                            line-height: 1.5;
+                            font-size: 0.9em;
+                            margin: 0 0 0.5em 0;
+                            padding: 0 0 0 1.8em;
+
+                            &::before {
+                                display: inline-block;
+                                position: absolute;
+                                content: "";
+                                background-image: url(/img/icon-list-bullit.svg);
+                                background-position: center;
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                width: 1.334em;
+                                height: 1.723em;
+                                left: 0;
+                                top: -0.5em;
+                            }
+                        }
+                    }
                 }
             }
         }

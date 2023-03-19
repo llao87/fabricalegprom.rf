@@ -1,0 +1,163 @@
+.counters {
+    height: 49em;
+    .container {
+        .lines {
+            .line.line-1 {
+                height: 33em;
+                top: 0;
+                left: 32em;
+            }
+            .line.line-2 {
+                top: 22.7em;
+                height: 35.3em;
+                transform: rotate(65.6deg);
+                left: 15.9em;
+            }
+            .node.node-1 {
+                left: 19.5em;
+                top: 20em;
+            }
+            .node.node-2 {
+                left: -0.7em;
+                top: 29.1em;
+            }
+        }
+
+        .row-counts {
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: stretch;
+            flex-wrap: wrap;
+            width: 64.4em;
+            top: 2.1em;
+            left: -0.2em;
+            .counter {
+                width: 16.1em;
+                height: 22.2em;
+                background: $light;
+                z-index: 10;
+                .photo {
+                    width: 100%;
+                    height: 12.5em;
+                    // border: 0.1em solid $gray;
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover;
+                }
+                .data {
+                    width: 100%;
+                    height: 9.7em;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex-direction: column;
+                    padding: 1em;
+                    border: 0.075em solid $gray;
+
+                    .digit {
+                        display: block;
+                        width: 100%;
+                        text-align: center;
+                        font-size: 4.8em;
+                        font-weight: bold;
+                        line-height: 1;
+                        color: $black;
+                    }
+                    .description {
+                        font-size: 1.8em;
+                        font-weight: 300;
+                        text-align: center;
+                        line-height: 1;
+                        display: block;
+                    }
+                }
+            }
+
+            .counter:first-child {
+                .data {
+                    border-left-width: 0.1em;
+                }
+            }
+            .counter:last-child {
+                .data {
+                    border-right-width: 0.1em;
+                }
+            }
+            .counter.only-text {
+                .data {
+                    .description {
+                        font-size: 1.8em;
+                        font-weight: 700;
+                        text-transform: uppercase;
+                        margin-bottom: 0.3em;
+                        letter-spacing: -0.04em;
+                        line-height: 1.3;
+                    }
+                }
+            }
+        }
+    }
+
+    .ready-to-studying {
+        width: 95.1em;
+        margin: 0 auto;
+        height: 28.9em;
+        top: -2.2em;
+        display: flex;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        color: $white;
+        z-index: 1;
+
+        &::after {
+            display: block;
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            box-shadow: inset 2001px 4px 4px rgba(0, 0, 0, 0.5);
+            z-index: 1;
+        }
+        .container {
+            text-align: center;
+
+            .section-title {
+                z-index: 10;
+                text-align: center;
+                font-size: 2.77em;
+                font-weight: 700;
+                text-transform: uppercase;
+                margin: 0.5em 0 1.3em 0;
+            }
+
+            .btn {
+                display: inline-block;
+                font-size: 0.9em;
+                text-transform: uppercase;
+                padding: 0.85em 4.4em 0.85em 4.4em;
+                border: 0.1em solid $black;
+                left: 0.25em;
+                font-weight: 500;
+                cursor: pointer;
+                z-index: 10;
+            }
+            .btn--white {
+                border: 0.1em solid $white;
+                background-color: $white;
+                color: $black;
+                font-weight: 500;
+                transition: all 0.3s linear;
+
+                &:hover {
+                    background-color: $black;
+                    color: $light;
+                }
+            }
+        }
+    }
+}
