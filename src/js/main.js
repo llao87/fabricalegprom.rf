@@ -1,4 +1,9 @@
 jQuery(function () {
+    // init burger manu
+    jQuery(".js__burger").on("click", function () {
+        jQuery(this).find(".main-menu").slideToggle(600);
+    });
+    
     // init EXPERTS Swiper:
     // const $expertsThumb = new Swiper(".experts-slider-thumb .swiper", {
     //     loop: true,
@@ -36,14 +41,14 @@ jQuery(function () {
     $(".experts-slider-thumb").slick({
         infinite: true,
         slidesToShow: 5,
-        initialSlide: 2,
+        // initialSlide: 2,
         slidesToScroll: 1,
         asNavFor: ".experts-slider",
         dots: false,
         centerMode: true,
-        focusOnSelect: true,
+        focusOnSelect: false,
         draggable: false,
-        centerPadding: '0 0 21%',
+        centerPadding: "0 0 21%",
         variableWidth: true,
     });
 
