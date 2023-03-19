@@ -42,7 +42,8 @@ gulp.task("css", async function () {
     return gulp
         .src([
             "node_modules/normalize.css/normalize.css",
-            "node_modules/swiper/swiper-bundle.min.css",
+            "node_modules/slick-carousel/slick/slick.css",
+            "node_modules/slick-carousel/slick/slick-theme.css",
         ])
         .pipe(concat("_libs.scss"))
         .pipe(gulp.dest("src/scss"))
@@ -61,7 +62,7 @@ gulp.task("js", async function () {
     return gulp
         .src([
             "node_modules/jquery/dist/jquery.min.js",
-            "node_modules/swiper/swiper-bundle.min.js",
+            "node_modules/slick-carousel/slick/slick.min.js",
         ])
         .pipe(concat("libs.min.js"))
         .pipe(uglify())

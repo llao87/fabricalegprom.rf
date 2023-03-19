@@ -1,66 +1,52 @@
 jQuery(function () {
     // init EXPERTS Swiper:
-    const $expertsThumb = new Swiper(".experts-slider-thumb .swiper", {
-        loop: true,
-        slidesPerView: 5,
-        navigation: false,
-        slidesOffsetBefore: 900,
-        initialSlide: 3,
-        loopedSlides: 4,
-        watchSlidesProgress: true,
+    // const $expertsThumb = new Swiper(".experts-slider-thumb .swiper", {
+    //     loop: true,
+    //     slidesPerView: 5,
+    //     navigation: false,
+    //     slidesOffsetBefore: 900,
+    //     initialSlide: 3,
+    //     loopedSlides: 4,
+    //     watchSlidesProgress: true,
+    // });
+
+    // const $experts = new Swiper(".experts-slider .swiper", {
+    //     loop: true,
+    //     slidesPerView: 1,
+    //     initialSlide: 3,
+    //     // Navigation arrows
+    //     navigation: {
+    //         prevEl: ".experts-slider .prev",
+    //         nextEl: ".experts-slider .next",
+    //     },
+    //     thumbs: {
+    //         swiper: $expertsThumb,
+    //     },
+    // });
+
+    $(".experts-slider").slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: true,
+        fade: false,
+        asNavFor: ".experts-slider-thumb",
+        slickGoTo: 3,
+    });
+    $(".experts-slider-thumb").slick({
+        infinite: true,
+        slidesToShow: 5,
+        initialSlide: 2,
+        slidesToScroll: 1,
+        asNavFor: ".experts-slider",
+        dots: false,
+        centerMode: true,
+        focusOnSelect: true,
+        draggable: false,
+        centerPadding: '0 0 21%',
+        variableWidth: true,
     });
 
-    const $experts = new Swiper(".experts-slider .swiper", {
-        loop: true,
-        slidesPerView: 1,
-        initialSlide: 3,
-        // Navigation arrows
-        navigation: {
-            prevEl: ".experts-slider .prev",
-            nextEl: ".experts-slider .next",
-        },
-        thumbs: {
-            swiper: $expertsThumb,
-        },
-    });
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
     // Обработка формы
     // jQuery(".js__form").on("submit", function (e) {
     //     e.preventDefault();
