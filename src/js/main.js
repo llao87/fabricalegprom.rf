@@ -1,7 +1,11 @@
 jQuery(function () {
     // init burger manu
     jQuery(".js__burger").on("click", function () {
-        jQuery(this).find(".main-menu").slideToggle(600);
+        jQuery(this).find(".main-menu").stop().slideToggle(600);
+    });
+
+    jQuery('.js__about-project').on("click", function () {
+        jQuery(this).next(".about").stop().slideToggle(600);
     });
     
     // init EXPERTS Swiper:
