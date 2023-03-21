@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>title</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="/js/libs.min.js"></script>
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <section class="form-participation">
+      <div class="container">
+        <div class="lines">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+          <div class="node node-1">+</div>
+          <div class="node node-2">+</div>
+        </div>
+      </div>
+      <section class="header">
+        <div class="container">
+          <div class="head-row"><a class="logo" href="/"><img class="logo-img" src="/img/logo.svg"></a>
+            <div class="burger js__burger"> 
+              <nav class="main-menu"><a class="nav-link" href="/">Главная</a><a class="nav-link" href="/">Положение о формировании экспертного совета</a><a class="nav-link" href="/">Порядок конкурсного отбора</a><a class="nav-link" href="/">Порядок проекта</a><a class="nav-link" href="/order/">Заявка участника</a><a class="nav-link" href="/partner/">Заявка партнера</a></nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="participation">
+        <div class="container">
+          <form id="participation">
+            <h1 class="section-title">Заявка на бесплатное участие</h1>
+            <div class="field">
+              <input class="text" type="text" name="full_name" placeholder="Фио">
+            </div>
+            <div class="field">
+              <input class="text" type="text" name="age" placeholder="Возраст">
+            </div>
+            <div class="field">
+              <input class="text" type="text" name="living" placeholder="Место жительства">
+            </div>
+            <div class="field">
+              <input class="text" type="text" name="phone" placeholder="Телефон">
+            </div>
+            <div class="field">
+              <input class="text" type="text" name="email" placeholder="Email">
+            </div>
+            <div class="field prof">
+              <P>Выберите направление практико-ориентированного курса "Фабрика легпрома"</P>
+              <label class="check">
+                <input class="checkbox" type="checkbox" name="prof[]" value="shveya"><span>Швея</span>
+              </label>
+              <label class="check">
+                <input class="checkbox" type="checkbox" name="prof[]" value="tehnolog"><span>Технолог</span>
+              </label>
+              <label class="check">
+                <input class="checkbox" type="checkbox" name="prof[]" value="konstruktor"><span>Модельер-конструктор</span>
+              </label>
+              <label class="check">
+                <input class="checkbox" type="checkbox" name="prof[]" value="zakroischik"><span>Модельер-закройщик</span>
+              </label>
+            </div>
+            <ol class="questions">
+              <li class="question">
+                <div class="text">Есть ли у вас профильное специальное образование?</div>
+                <div class="field">
+                  <label class="check">
+                    <input class="checkbox" type="radio" name="grade" value="1"><span>Да</span>
+                  </label>
+                  <label class="check">
+                    <input class="checkbox" type="radio" name="grade" value="0"><span>Нет</span>
+                  </label>
+                </div>
+                <input class="text additional" type="text" name="grade-info" placeholder="Укажите какое *">
+              </li>
+              <li class="question">
+                <div class="text">Есть ли у Вас неоконченное специальное/высшее образование?</div>
+                <div class="field">
+                  <label class="check">
+                    <input class="checkbox" type="radio" name="vuz" value="1"><span>Да</span>
+                  </label>
+                  <label class="check">
+                    <input class="checkbox" type="radio" name="vuz" value="0"><span>Нет</span>
+                  </label>
+                </div>
+                <input class="text additional" type="text" name="vuz-info" placeholder="Укажите какое *">
+              </li>
+              <li class="question">
+                <div class="text">Имеете ли Вы опыт работы в ателье?</div>
+                <div class="field">
+                  <label class="check">
+                    <input class="checkbox" type="radio" name="atelie-exp" value="1"><span>Да</span>
+                  </label>
+                  <label class="check">
+                    <input class="checkbox" type="radio" name="atelie-exp" value="0"><span>Нет</span>
+                  </label>
+                </div>
+                <input class="text additional" type="text" name="atelie-exp-info" placeholder="Укажите какое *">
+              </li>
+              <li class="question">
+                <div class="text">Имеете ли Вы опыт работы на швейном производстве?</div>
+                <div class="field">
+                  <label class="check">
+                    <input class="checkbox" type="radio" name="expirience" value="1"><span>Да</span>
+                  </label>
+                  <label class="check">
+                    <input class="checkbox" type="radio" name="expirience" value="0"><span>Нет</span>
+                  </label>
+                </div>
+                <input class="text additional" type="text" name="expirience-info" placeholder="Укажите какое *">
+              </li>
+              <li class="question">
+                <div class="text">Покажите примеры своих работ (не менее трех )</div>
+                <div class="field">
+                  <input class="text" type="text" name="portfolio" placeholder="прикрепить ссылку на Яндекс диск">
+                </div>
+              </li>
+              <li class="question">
+                <div class="text">Расскажите о себе:</div>
+                <div class="field">
+                  <textarea class="text" type="text" name="about_myself"></textarea>
+                </div>
+              </li>
+              <li class="question">
+                <div class="text">Какими особенными навыками по специальности вы обладаете?</div>
+                <div class="field">
+                  <textarea class="text" type="text" name="specials"></textarea>
+                </div>
+              </li>
+              <li class="question">
+                <div class="text">Ксерокопия трудовой книжки с подтвержденным опытом работы</div>
+                <div class="field">
+                  <input class="text" type="text" name="portfolio" placeholder="прикрепить ссылку на Яндекс диск">
+                </div>
+              </li>
+            </ol>
+            <div class="field form-submit">
+              <input class="submit" type="submit" value="Отправить">
+            </div>
+            <div class="field">
+              <div class="agrees">Нажимая на кнопку «Отправить», вы даете согласие на обработку персональных данныхв соответствии с политикой обработки персональных данных.</div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>

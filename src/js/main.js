@@ -4,10 +4,10 @@ jQuery(function () {
         jQuery(this).find(".main-menu").stop().slideToggle(600);
     });
 
-    jQuery('.js__about-project').on("click", function () {
+    jQuery(".js__about-project").on("click", function () {
         jQuery(this).next(".about").stop().slideToggle(600);
     });
-    
+
     // init EXPERTS Swiper:
     // const $expertsThumb = new Swiper(".experts-slider-thumb .swiper", {
     //     loop: true,
@@ -57,26 +57,24 @@ jQuery(function () {
     });
 
     // Обработка формы
-    // jQuery(".js__form").on("submit", function (e) {
-    //     e.preventDefault();
-    //     const form = jQuery(this);
-    //     let data = form.serializeArray();
-    //     console.log("Form data: ", data);
-    //     newHTML = '<div class="answer-block">';
+    jQuery("#participation").on("submit", function (e) {
+        e.preventDefault();
 
-    //     data.forEach(function (name, idx, arr) {
-    //         newHTML +=
-    //             "<p>" +
-    //             name.name +
-    //             " == " +
-    //             (name.value == 1 ? "Да" : "Нет") +
-    //             "</p>";
-    //     });
+        let form = jQuery(this),
+            data = form.serializeArray();
 
-    //     newHTML += "</div>";
-    //     console.log(newHTML);
-    //     jQuery(".js__form > .container").html(newHTML);
-    // });
+        console.log("Form data: ", data);
+
+        // jQuery
+        //     .ajax({
+        //         method: "POST",
+        //         url: "/ajax/prof.php",
+        //         data: { prof: jQuery(this).val() },
+        //     })
+        //     .done(function (data) {
+        //         console.log(data);
+        //     });
+    });
 
     // инициализация раскрывающихся списков
     jQuery(".js__collapse").each(function (index) {
@@ -104,35 +102,6 @@ jQuery(function () {
         });
     });
 
-    // набегающие числа
-    function outNum(num, step, precision, time, elem) {
-        let e = document.querySelector(elem);
-        n = 0;
-        let t = Math.round(time / (num / step));
-        let intervals = [];
-        intervals[elem] = setInterval(() => {
-            n = n + step;
-            if (n >= num) {
-                clearInterval(intervals[elem]);
-            }
-            e.innerHTML = n.toFixed(precision);
-        }, t);
-    }
-
-    // инициализация набегающих цифр (НЕ РАБОТАЕТ)
-    // jQuery(".js__digit").each(function () {
-    //     let elem = jQuery(this),
-    //         max = elem.data("max"),
-    //         step = elem.data("step"),
-    //         precision = elem.data("precision"),
-    //         time = elem.data("time"),
-    //         id = "#" + elem.attr("id");
-
-    //     console.log(max, " ", step, " ", precision, " ", time, " ", id);
-
-    // outNum(max, step, precision, time, id);
-    // });
-
     // переключние профессий
     jQuery(".js__prof").on("click", function () {
         const prof = jQuery(this);
@@ -141,6 +110,16 @@ jQuery(function () {
             jQuery(".js__prof").removeClass("active");
             prof.addClass("active");
         }
+
+        jQuery
+            .ajax({
+                method: "POST",
+                url: "/ajax/prof.php",
+                data: { prof: jQuery(this).val() },
+            })
+            .done(function (data) {
+                console.log(data);
+            });
     });
 
     // инициализация разворачивания простых списков

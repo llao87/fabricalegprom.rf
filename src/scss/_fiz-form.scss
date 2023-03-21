@@ -1,0 +1,258 @@
+.form-participation {
+    width: 100%;
+    .container {
+        .lines {
+            z-index: 0;
+            top: 0;
+            left: 0;
+            .line.line-1 {
+                height: 115.3em;
+                left: 0.85em;
+                top: 4em;
+            }
+            .line.line-2 {
+                width: 115.3em;
+                left: 1.35em;
+                top: -71.7em;
+                height: 0.2em;
+            }
+            .line.line-3 {
+                width: 115.3em;
+                left: 0.9em;
+                top: 2.1em;
+                height: 0.2em;
+            }
+            .node.node-1 {
+                top: 7.2em;
+                left: 0;
+            }
+            .node.node-2 {
+                top: 27.1em;
+                left: 0;
+            }
+        }
+    }
+    .header {
+        position: relative;
+        width: 100%;
+        border-bottom: 0.1em solid $black;
+        background: $light;
+        z-index: 15;
+        .container {
+            .head-row {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .logo {
+                    position: static;
+                    display: inline-block;
+                    width: 12.2em;
+                    height: 4.8em;
+                    text-decoration: none;
+                    outline: none;
+                    margin: 0.9em 0 0 -0.1em;
+
+                    .logo-img {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+
+                .burger {
+                    position: static;
+                    width: 2em;
+                    height: 2em;
+                    background-image: url(/img/icon-burger.svg);
+                    background-size: contain;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    z-index: 100;
+                    margin: 0.27em 0 0 0;
+                    cursor: pointer;
+
+                    .main-menu {
+                        display: none;
+                        position: relative;
+                        top: 2.5em;
+                        transform: translateX(-100%);
+                        width: 15em;
+                        padding: 1.4em 1em 1.4em 2em;
+                        box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.25);
+                        background-color: $light;
+                        height: auto;
+                        right: -1.75em;
+                        .nav-link {
+                            position: relative;
+                            display: block;
+                            margin-bottom: 1.6em;
+                            text-decoration: none;
+                            line-height: 1.25;
+                            font-size: 0.8em;
+                            color: $black;
+                            transition: all 0.3s linear;
+                            font-weight: normal;
+                            border-bottom: 0.12em solid transparent;
+
+                            &:last-child {
+                                margin: 0;
+                            }
+
+                            &::before {
+                                display: block;
+                                position: absolute;
+                                content: "";
+                                width: 1em;
+                                height: 1em;
+                                background-image: url(/img/icon-list-bullit.svg);
+                                background-position: center;
+                                background-size: contain;
+                                background-repeat: no-repeat;
+                                left: -1.5em;
+                                opacity: 0;
+                                transition: all 0.3s linear;
+                            }
+
+                            &:hover {
+                                border-color: $black;
+
+                                &::before {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    section.participation {
+        padding: 5.8em 0 7em;
+        background-color: $gray;
+        .container {
+            padding: 0 6.7em 0 9.1em;
+            form {
+                background: #fff;
+                padding: 4.2em 5.6em;
+                .section-title {
+                    line-height: 1;
+                    font-size: 2.4em;
+                    text-transform: uppercase;
+                    letter-spacing: -0.02em;
+                    margin: 0 0 1.35em 0;
+                }
+
+                .field {
+                    width: 100%;
+                    input,
+                    textarea {
+                        width: 100%;
+                        border-top: none;
+                        border-left: none;
+                        border-right: none;
+                        border-bottom: 0.1em solid #d2d2d2;
+                        margin: 0.2em 0 2.5em 0.2em;
+                        outline: none;
+                        padding: 0.2em 0;
+                    }
+                    textarea {
+                        min-height: 5em;
+                    }
+                    p {
+                        width: 100%;
+                        margin: 0.4em 0 0.6em 0.3em;
+                        border-bottom: 0.1em solid #d2d2d2;
+                        padding: 0 0 0.3em 0;
+                    }
+                    input.check {
+                    }
+                    input.submit {
+                        width: auto;
+                        font-size: 1em;
+                        font-weight: normal;
+                        text-transform: uppercase;
+                        padding: 0.7em 4em;
+                        margin: 2.5em 0;
+                        cursor: pointer;
+                        border: 0.1em solid #000106;
+                        background-color: #000106;
+                        color: #fff;
+                        transition: all 0.3s linear;
+
+                        &:hover {
+                            background-color: $light;
+                            color: $black;
+                        }
+                    }
+                    .agrees {
+                        font-size: 1em;
+                        font-weight: normal;
+                        text-align: center;
+                        line-height: 1.35;
+                        color: #d2d2d2;
+                    }
+
+                    .check {
+                        background: #fff;
+                        margin: 0 0.2em;
+                        display: inline-block;
+                        width: auto;
+                        height: auto;
+                    }
+                    .check span {
+                        border: 0.1em solid #d2d2d2;
+                        display: inline-block;
+                        margin: 0 0 0 0;
+                        padding: 0.7em 0.5em;
+                        cursor: pointer;
+                        text-align: center;
+                        font-size: 1em;
+                        text-transform: uppercase;
+                    }
+                    .check .checkbox {
+                        position: relative;
+                        z-index: -1;
+                        display: none;
+                    }
+                    .check .checkbox:checked + span {
+                        background: $gray;
+                    }
+                }
+                .field.prof {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: space-between;
+                }
+                .field.form-submit {
+                    text-align: center;
+                }
+                .questions {
+                    margin: 2.2em 0 0 -0.6em;
+                    .question {
+                        .text {
+                            margin: 0 0 1.2em 0;
+                        }
+                        .field {
+                            margin: 0 0 0.5em -1.4em;
+                        }
+                        input.text {
+                            width: 100%;
+                            border-top: none;
+                            border-left: none;
+                            border-right: none;
+                            border-bottom: 0.1em solid #d2d2d2;
+                            margin: 0.2em 0 3.1em 0.2em;
+                            outline: none;
+                            padding: 0.2em 0;
+                        }
+                        .additional {
+                            margin: 0.2em 0 3.1em -1.2em;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

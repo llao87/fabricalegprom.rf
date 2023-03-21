@@ -1,0 +1,146 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		meta(
+			name="viewport"
+			content="width=device-width, initial-scale=1"
+		)
+		title= "title"
+		link(
+			rel="stylesheet",
+			href="css/style.min.css"
+		)
+		script(src="/js/libs.min.js")
+		script(src="/js/main.js")
+	body
+		section.form-participation
+			.container
+				.lines
+					.line.line-1
+					.line.line-2
+					.line.line-3
+					.node.node-1 +
+					.node.node-2 +
+
+
+			section.header
+				.container
+					.head-row
+						a.logo(href="/")
+							img.logo-img(src="/img/logo.svg")
+
+						.burger.js__burger 
+							nav.main-menu
+								a.nav-link(href="/") Главная
+								a.nav-link(href="/") Положение о формировании экспертного совета
+								a.nav-link(href="/") Порядок конкурсного отбора
+								a.nav-link(href="/") Порядок проекта
+								a.nav-link(href="/order/") Заявка участника
+								a.nav-link(href="/partner/") Заявка партнера
+
+			section.participation
+				.container
+					form#participation
+						h1.section-title Заявка на бесплатное участие
+
+						.field
+							input.text(type="text" name="full_name" placeholder="Фио")
+
+						.field
+							input.text(type="text" name="age" placeholder="Возраст")
+
+						.field
+							input.text(type="text" name="living" placeholder="Место жительства")
+
+						.field
+							input.text(type="text" name="phone" placeholder="Телефон")
+
+						.field
+							input.text(type="text" name="email" placeholder="Email")
+
+						.field.prof
+							P Выберите направление практико-ориентированного курса "Фабрика легпрома"
+							label.check
+								input.checkbox(type="checkbox" name="prof[]" value="shveya")
+								span Швея
+							label.check
+								input.checkbox(type="checkbox" name="prof[]" value="tehnolog")
+								span Технолог
+							label.check
+								input.checkbox(type="checkbox" name="prof[]" value="konstruktor")
+								span Модельер-конструктор
+							label.check
+								input.checkbox(type="checkbox" name="prof[]" value="zakroischik")
+								span Модельер-закройщик
+
+						ol.questions
+							li.question
+								.text Есть ли у вас профильное специальное образование?
+								.field
+									label.check
+										input.checkbox(type="radio" name="grade" value="1")
+										span Да
+									label.check
+										input.checkbox(type="radio" name="grade" value="0")
+										span Нет
+								input.text.additional(type="text" name="grade-info" placeholder="Укажите какое *")
+
+							li.question
+								.text Есть ли у Вас неоконченное специальное/высшее образование?
+								.field
+									label.check
+										input.checkbox(type="radio" name="vuz" value="1")
+										span Да
+									label.check
+										input.checkbox(type="radio" name="vuz" value="0")
+										span Нет
+								input.text.additional(type="text" name="vuz-info" placeholder="Укажите какое *")
+
+							li.question
+								.text Имеете ли Вы опыт работы в ателье?
+								.field
+									label.check
+										input.checkbox(type="radio" name="atelie-exp" value="1")
+										span Да
+									label.check
+										input.checkbox(type="radio" name="atelie-exp" value="0")
+										span Нет
+								input.text.additional(type="text" name="atelie-exp-info" placeholder="Укажите какое *")
+
+							li.question
+								.text Имеете ли Вы опыт работы на швейном производстве?
+								.field
+									label.check
+										input.checkbox(type="radio" name="expirience" value="1")
+										span Да
+									label.check
+										input.checkbox(type="radio" name="expirience" value="0")
+										span Нет
+								input.text.additional(type="text" name="expirience-info" placeholder="Укажите какое *")
+
+
+							li.question
+								.text Покажите примеры своих работ (не менее трех )
+								.field
+									input.text(type="text" name="portfolio" placeholder="прикрепить ссылку на Яндекс диск")
+
+							li.question
+								.text Расскажите о себе:
+								.field
+									textarea.text(type="text" name="about_myself")
+
+							li.question
+								.text Какими особенными навыками по специальности вы обладаете?
+								.field
+									textarea.text(type="text" name="specials")
+
+							li.question
+								.text Ксерокопия трудовой книжки с подтвержденным опытом работы
+								.field
+									input.text(type="text" name="portfolio" placeholder="прикрепить ссылку на Яндекс диск")
+
+						.field.form-submit
+							input.submit(type="submit" value="Отправить")
+						.field
+							.agrees Нажимая на кнопку «Отправить», вы даете согласие на обработку персональных данныхв соответствии с политикой обработки персональных данных.

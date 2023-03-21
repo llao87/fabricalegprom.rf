@@ -1,0 +1,66 @@
+section.textdoc {
+    padding: 5.8em 0 7em;
+    background-color: $gray;
+    .container {
+        padding: 0 6.7em 0 9.1em;
+        .content {
+            background: #fff;
+            padding: 4.2em 5.6em;
+            // font-size: 0.5625em;
+            font-size: 1em;
+            // padding: 1.2em 2em;
+
+            p,
+            ul,
+            ol {
+                margin-bottom: 2em;
+            }
+            p,
+            ul,
+            ol,
+            li,
+            a,
+            span {
+                font-size: 1em;
+                line-height: 1.5;
+                text-transform: initial;
+            }
+
+            ul {
+                display: inline-block;
+                padding: 0;
+            }
+
+            ul > li {
+                position: relative;
+                display: inline-block;
+                line-height: 1.5;
+                margin: 0 0 0.5em 0;
+                padding: 0 0 0 1.4em;
+            }
+
+            ul > li:before {
+                display: inline-block;
+                position: absolute;
+                content: "";
+                background-image: url(/img/icon-list-bullit.svg);
+                background-position: center;
+                background-size: contain;
+                background-repeat: no-repeat;
+                width: 0.934em;
+                height: 1.023em;
+                left: 0;
+                top: 0em;
+            }
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                font-weight: 500;
+            }
+        }
+    }
+}

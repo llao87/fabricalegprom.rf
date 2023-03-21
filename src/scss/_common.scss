@@ -30,6 +30,12 @@ body {
     max-width: 66em;
     margin: 0 auto;
     padding: 0 1em;
+
+    .btn {
+        text-decoration: none;
+    }
+
+    
 }
 .lines {
     position: absolute;
@@ -60,3 +66,5 @@ body {
         padding: 0 0 0.1em 0;
     }
 }
+
+

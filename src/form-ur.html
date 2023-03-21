@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>title</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script src="/js/libs.min.js"></script>
+    <script src="/js/main.js"></script>
+  </head>
+  <body>
+    <section class="form-participation">
+      <div class="container">
+        <div class="lines">
+          <div class="line line-1"></div>
+          <div class="line line-2"></div>
+          <div class="line line-3"></div>
+          <div class="node node-1">+</div>
+          <div class="node node-2">+</div>
+        </div>
+      </div>
+      <section class="header">
+        <div class="container">
+          <div class="head-row"><a class="logo" href="/"><img class="logo-img" src="/img/logo.svg"></a>
+            <div class="burger js__burger"> 
+              <nav class="main-menu"><a class="nav-link" href="/">Главная</a><a class="nav-link" href="/">Положение о формировании экспертного совета</a><a class="nav-link" href="/">Порядок конкурсного отбора</a><a class="nav-link" href="/">Порядок проекта</a><a class="nav-link" href="/order/">Заявка участника</a><a class="nav-link" href="/partner/">Заявка партнера</a></nav>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="participation">
+        <div class="container">
+          <form id="participation">
+            <h1 class="section-title">Форма заявки для юр лиц (фабрики-заказчики)</h1>
+            <div class="field">
+              <input class="text" type="text" name="company" placeholder="Полное наименование компании">
+            </div>
+            <div class="field">
+              <input class="text" type="text" name="full_name" placeholder="ФИО заявителя">
+            </div>
+            <div class="field">
+              <input class="text" type="text" name="phone" placeholder="Контактный телефон">
+            </div>
+            <div class="field">
+              <input class="text" type="text" name="email" placeholder="Email">
+            </div>
+            <ol class="questions">
+              <li class="question">
+                <div class="text">Субъект предпринимательской деятельности</div>
+                <div class="field">
+                  <label class="check">
+                    <input class="checkbox" type="radio" name="business-subject" value="Индивидуальный предприниматель"><span>Индивидуальный предприниматель</span>
+                  </label>
+                  <label class="check">
+                    <input class="checkbox" type="radio" name="business-subject" value="Юридическое лицо"><span>Юридическое лицо</span>
+                  </label>
+                </div>
+                <div class="additional"></div>
+              </li>
+              <li class="question">
+                <div class="text">Статус от юридического лица:</div>
+                <div class="field">
+                  <label class="check">
+                    <input class="checkbox" type="radio" name="status-urlitsa" value="руководитель"><span>руководитель</span>
+                  </label>
+                  <label class="check">
+                    <input class="checkbox" type="radio" name="status-urlitsa" value="уполномоченное лицо"><span>уполномоченное лицо</span>
+                  </label>
+                </div>
+                <div class="additional"></div>
+              </li>
+              <li class="question">
+                <div class="text">Информация о компании/бренде/производстве (до 1000 знаков, информация о бренде, в свободной форме)</div>
+                <div class="field">
+                  <textarea class="text" type="text" name="about_company"></textarea>
+                </div>
+                <div class="additional"></div>
+              </li>
+              <li class="question">
+                <div class="text">ИНН</div>
+                <div class="field">
+                  <input class="text" type="text" name="inn" placeholder="ИНН">
+                </div>
+              </li>
+              <li class="question">
+                <div class="text">ОКВЭД</div>
+                <div class="field">
+                  <input class="text" type="text" name="okved" placeholder="ОКВЭД">
+                </div>
+              </li>
+              <li class="question">
+                <div class="text">ОГРН/ОГРНИП (при наличии):</div>
+                <div class="field">
+                  <input class="text" type="text" name="ogrn" placeholder="ОГРН/ОГРНИП">
+                </div>
+              </li>
+              <li class="question">
+                <div class="text">Наличие сертификатов соответствия на произведенный товар (прикрепить ссылку)</div>
+                <div class="field">
+                  <input class="text" type="text" name="certificates" placeholder="прикрепить ссылку на Яндекс диск">
+                </div>
+              </li>
+              <li class="question">
+                <div class="text">Ссылки на страницы в социальных сетях, Телеграмм-канал или сайт организации</div>
+                <div class="field">
+                  <textarea class="text" type="text" name="social_links" placeholder="Ссылки:"></textarea>
+                </div>
+                <div class="additional"></div>
+              </li>
+              <li class="question">
+                <div class="text">Информация о потребности в швеях:</div>
+                <div class="field">
+                  <input class="text" type="text" name="kolvo_shveya" placeholder="Требуемое количество швей">
+                </div>
+              </li>
+              <li class="question">
+                <div class="text">Информация о потребности в технологах:</div>
+                <div class="field">
+                  <input class="text" type="text" name="kolvo_tehnolog" placeholder="Требуемое количество технологов">
+                </div>
+              </li>
+              <li class="question">
+                <div class="text">Информация о потребности в модельерах-закройщиках:</div>
+                <div class="field">
+                  <input class="text" type="text" name="kolvo_zakroishik" placeholder="Требуемое количество модельеров-закройщиков">
+                </div>
+              </li>
+              <li class="question">
+                <div class="text">Информация о потребности в модельерах-конструкторах:</div>
+                <div class="field">
+                  <input class="text" type="text" name="kolvo_konstruktor" placeholder="Требуемое количество модельеров-конструкторов">
+                </div>
+              </li>
+            </ol>
+            <div class="field form-submit">
+              <input class="submit" type="submit" value="Отправить">
+            </div>
+            <div class="field">
+              <div class="agrees">Нажимая на кнопку «Отправить», вы даете согласие на обработку персональных данныхв соответствии с политикой обработки персональных данных.</div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </section>
+  </body>
+</html>

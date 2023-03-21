@@ -18,8 +18,8 @@ section.main
                     a.nav-link(href="/") Положение о формировании экспертного совета
                     a.nav-link(href="/") Порядок конкурсного отбора
                     a.nav-link(href="/") Порядок проекта
-                    a.nav-link(href="/") Заявка участника
-                    a.nav-link(href="/") Заявка партнера
+                    a.nav-link(href="/order/") Заявка участника
+                    a.nav-link(href="/partner/") Заявка партнера
 
             h1.main-offer Хотите
 
@@ -36,7 +36,7 @@ section.main
                     .title.js__about-project О проекте
                     .about Проект "Фабрика легпрома" предлагает вам пройти бесплатное обучение и получить прикладную профессию – швеи, закройщика, конструктора, технолога – с возможностью дальнейшего трудоустройства на производствах.
 
-                .btn.btn--black.js-order Записаться на курс
+                a.btn.btn--black.js-order(href="/order/") Записаться на курс
 
             .mannequins--bg 
                 .mannequins--models
@@ -113,7 +113,7 @@ section.main
             .container 
                 h2.section-title Мне все понятно, хочу учиться
 
-                .btn.btn--white.js-order Заполнить заявку
+                a.btn.btn--white.js-order(href="/order/") Заполнить заявку
 
     section.program 
         .container 
@@ -181,7 +181,7 @@ section.main
                             li Контролю качества пошива и своевременному устранению дефектов в изделиях;
                             li Укладке и передаче отшитых изделий на следующие технологические этапы.
 
-            .btn.btn--black.js__order Записаться на курс
+            a.btn.btn--black.js__order(href="/order/") Записаться на курс
 
     section.about-study 
         .container 
@@ -190,7 +190,6 @@ section.main
                     .line.line-1
                     .line.line-2
                     .line.line-3
-                    //- .line.line-4
 
                     .node.node-1 +
                     .node.node-2 +
@@ -209,17 +208,16 @@ section.main
                 .manufactures-title Предприятия для стажировки и работы:
                 .manufactures-wrap 
                     .manufactures
-                        .item(style="background-image:url(/img/partner-kuntsevo.jpg)")
-                        .item(style="background-image:url(/img/partner-lisa-and-leo.jpg)")
-                        .item(style="background-image:url(/img/partner-medical-service.jpg)")
-                        .item(style="background-image:url(/img/partner-m-reason.jpg)")
-                        .item(style="background-image:url(/img/partner-florens-group.jpg)")
-                        .item(style="background-image:url(/img/partner-veter.jpg)")
-                        .item(style="background-image:url(/img/partner-advateks.jpg)")
-                        .item(style="background-image:url(/img/partner-zasport.jpg)")
-                        .item(style="background-image:url(/img/partner-5.45-design.jpg)")
-                        .item(style="background-image:url(/img/partner-bask.jpg)")
-                        .item(style="background-image:url(/img/partner-rnb.jpg)")
+                        a.item(href="https://tpkuntsevo.ru/" style="background-image:url(/img/partner-kuntsevo.jpg)")
+                        a.item(href="https://lisaleo.ru/" style="background-image:url(/img/partner-lisa-and-leo.jpg)")
+                        a.item(href="https://www.medicalserviceplus.ru/" style="background-image:url(/img/partner-medical-service.jpg)")
+                        a.item(href="https://www.m-reason.ru/" style="background-image:url(/img/partner-m-reason.jpg)")
+                        a.item(href="https://xn--e1alhckip.xn--p1ai/" style="background-image:url(/img/partner-florens-group.jpg)")
+                        a.item(href="https://veter.cc/" style="background-image:url(/img/partner-veter.jpg)")
+                        a.item(href="http://www.advateks.ru/" style="background-image:url(/img/partner-advateks.jpg)")
+                        a.item(href="https://zasport.com/" style="background-image:url(/img/partner-zasport.jpg)")
+                        a.item(href="https://545design.ru/" style="background-image:url(/img/partner-5.45-design.jpg)")
+                        a.item(href="https://bask.ru/" style="background-image:url(/img/partner-bask.jpg)")
                     
     section.experts 
         .container 
@@ -235,22 +233,22 @@ section.main
             .experts-slider-thumb
                 .thumb-slide 
                     .slide-inner
-                        .photo(style="background-image:url(/img/experts-belkevich.jpg)") 1
+                        .photo(style="background-image:url(/img/experts-belkevich.jpg)")
                 .thumb-slide 
                     .slide-inner
-                        .photo(style="background-image:url(/img/experts-belkevich.jpg)") 2
+                        .photo(style="background-image:url(/img/experts-belkevich.jpg)")
                 .thumb-slide 
                     .slide-inner
-                        .photo(style="background-image:url(/img/experts-belkevich.jpg)") 3
+                        .photo(style="background-image:url(/img/experts-belkevich.jpg)")
                 .thumb-slide 
                     .slide-inner
-                        .photo(style="background-image:url(/img/experts-belkevich.jpg)") 4
+                        .photo(style="background-image:url(/img/experts-belkevich.jpg)")
                 .thumb-slide 
                     .slide-inner
-                        .photo(style="background-image:url(/img/experts-belkevich.jpg)") 5
+                        .photo(style="background-image:url(/img/experts-belkevich.jpg)")
                 .thumb-slide 
                     .slide-inner
-                        .photo(style="background-image:url(/img/experts-belkevich.jpg)") 6
+                        .photo(style="background-image:url(/img/experts-belkevich.jpg)")
 
 
             .experts-slider
@@ -259,18 +257,18 @@ section.main
                         .content
                             p.name Татьяна
                             p.lastname Белькевич
-                            p.position эксперт-куратор проекта
+                            p.position Организатор, эксперт
                             p.description Совладелец, основатель, президент Русской ассоциации участников фешен индустрии (РАФИ). Совладелец, основатель, коммерческий директор Медиахолдинга PROfashion. (г.Москва) С 2006 года является совладельцем и коммерческим директором Медиахолдинга PROfashion. PROfashion – ведущее аналитическое издание о моде для профессионалов Индустрии Моды, так же в медиа-холдинг входит порядка 15 проектов, в том числе печатные издания, онлайн-портал, консалтинговое агентство и коммуникационное агентство. С 2016 года является президентом РАФИ
                 .expert-slide 
-                    .slide-inner 2
+                    .slide-inner
                 .expert-slide 
-                    .slide-inner 3
+                    .slide-inner
                 .expert-slide 
-                    .slide-inner 4
+                    .slide-inner
                 .expert-slide 
-                    .slide-inner 5
+                    .slide-inner
                 .expert-slide 
-                    .slide-inner 6
+                    .slide-inner
 
 
             .team 
@@ -302,7 +300,7 @@ section.main
                         input.field(type="text" name="phone" placeholder="Телефон" required)
 
                     .field-wrap 
-                        textarea.field(name="msg")
+                        textarea.field(name="msg" placeholder="Сообщение")
 
                     .form-controls
                         input.btn.btn--light(type="submit" name="submit" value="Отправить")
@@ -316,14 +314,14 @@ section.main
             .main-offer Хотите освоить всегда востребованную профессию на высоком уровня
 
             .links-row 
-                .btn.btn--light Заполнить заявку
+                a.btn.btn--light(href="/order/") Заполнить заявку
 
             .links
                 a.nav-link(href="/") Положение о формировании экспертного совета
                 a.nav-link(href="/") Порядок конкурсного отбора
                 a.nav-link(href="/") Порядок проекта
-                a.nav-link(href="/") Заявка участника
-                a.nav-link(href="/") Заявка партнера
+                a.nav-link(href="/order/") Заявка участника
+                a.nav-link(href="/partner/") Заявка партнера
 
 
 

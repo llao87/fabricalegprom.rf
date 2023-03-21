@@ -1,0 +1,136 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="utf-8")
+        meta(
+            name="viewport"
+            content="width=device-width, initial-scale=1"
+        )
+        title= "title"
+        link(
+            rel="stylesheet",
+            href="css/style.min.css"
+        )
+        script(src="/js/libs.min.js")
+        script(src="/js/main.js")
+    body
+        section.form-participation
+            .container
+                .lines
+                    .line.line-1
+                    .line.line-2
+                    .line.line-3
+                    .node.node-1 +
+                    .node.node-2 +
+
+
+            section.header
+                .container
+                    .head-row
+                        a.logo(href="/")
+                            img.logo-img(src="/img/logo.svg")
+                        
+                        .burger.js__burger 
+                            nav.main-menu
+                                a.nav-link(href="/") Главная
+                                a.nav-link(href="/") Положение о формировании экспертного совета
+                                a.nav-link(href="/") Порядок конкурсного отбора
+                                a.nav-link(href="/") Порядок проекта
+                                a.nav-link(href="/order/") Заявка участника
+                                a.nav-link(href="/partner/") Заявка партнера
+            section.participation
+                .container
+                    form#participation
+                        h1.section-title Форма заявки для юр лиц (фабрики-заказчики)
+
+                        .field
+                            input.text(type="text" name="company" placeholder="Полное наименование компании")
+
+                        .field
+                            input.text(type="text" name="full_name" placeholder="ФИО заявителя")
+
+                        .field
+                            input.text(type="text" name="phone" placeholder="Контактный телефон")
+
+                        .field
+                            input.text(type="text" name="email" placeholder="Email")
+
+                        ol.questions
+                            li.question
+                                .text Субъект предпринимательской деятельности
+                                .field
+                                    label.check
+                                        input.checkbox(type="radio" name="business-subject" value="Индивидуальный предприниматель")
+                                        span Индивидуальный предприниматель
+                                    label.check
+                                        input.checkbox(type="radio" name="business-subject" value="Юридическое лицо")
+                                        span Юридическое лицо
+                                .additional
+
+                            li.question
+                                .text Статус от юридического лица:
+                                .field
+                                    label.check
+                                        input.checkbox(type="radio" name="status-urlitsa" value="руководитель")
+                                        span руководитель
+                                    label.check
+                                        input.checkbox(type="radio" name="status-urlitsa" value="уполномоченное лицо")
+                                        span уполномоченное лицо
+                                .additional
+
+                            li.question
+                                .text Информация о компании/бренде/производстве (до 1000 знаков, информация о бренде, в свободной форме)
+                                .field
+                                    textarea.text(type="text" name="about_company")
+                                .additional
+
+                            li.question
+                                .text ИНН
+                                .field
+                                    input.text(type="text" name="inn" placeholder="ИНН")
+
+                            li.question
+                                .text ОКВЭД
+                                .field
+                                    input.text(type="text" name="okved" placeholder="ОКВЭД")
+
+                            li.question
+                                .text ОГРН/ОГРНИП (при наличии):
+                                .field
+                                    input.text(type="text" name="ogrn" placeholder="ОГРН/ОГРНИП")
+
+                            li.question
+                                .text Наличие сертификатов соответствия на произведенный товар (прикрепить ссылку)
+                                .field
+                                    input.text(type="text" name="certificates" placeholder="прикрепить ссылку на Яндекс диск")
+
+                            li.question
+                                .text Ссылки на страницы в социальных сетях, Телеграмм-канал или сайт организации
+                                .field
+                                    textarea.text(type="text" name="social_links" placeholder="Ссылки:")
+                                .additional
+
+                            li.question
+                                .text Информация о потребности в швеях:
+                                .field
+                                    input.text(type="text" name="kolvo_shveya" placeholder="Требуемое количество швей")
+
+                            li.question
+                                .text Информация о потребности в технологах:
+                                .field
+                                    input.text(type="text" name="kolvo_tehnolog" placeholder="Требуемое количество технологов")
+
+                            li.question
+                                .text Информация о потребности в модельерах-закройщиках:
+                                .field
+                                    input.text(type="text" name="kolvo_zakroishik" placeholder="Требуемое количество модельеров-закройщиков")
+
+                            li.question
+                                .text Информация о потребности в модельерах-конструкторах:
+                                .field
+                                    input.text(type="text" name="kolvo_konstruktor" placeholder="Требуемое количество модельеров-конструкторов")
+
+                        .field.form-submit
+                            input.submit(type="submit" value="Отправить")
+                        .field
+                            .agrees Нажимая на кнопку «Отправить», вы даете согласие на обработку персональных данныхв соответствии с политикой обработки персональных данных.
